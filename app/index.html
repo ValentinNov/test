@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>  
+  <header class="header">
+    <div class="container">  
+      <div class="header__top">
+        <div class="header__top-bg"></div>
+        <div class="header__top-box">
+          <a class="header__top-lenguage" href="#">Eng</a>
+          <a class="header__top-lenguage" href="#">Aze</a>
+          <a class="header__top-lenguage" href="#">Рус</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__logo">          
+          <a class="header__logo-link" href="#">            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="275" height="72"
+              viewBox="0 0 275 72">
+              <image id="Logo" width="275" height="72"
+                xlink:href="data:img/png;base64,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" />
+            </svg> 
+          </a>
+        </div>
+        <div class="header__bottom-box">
+          <ul class="header__bottom-list">
+            <li class="header__bottom-item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13"
+                viewBox="0 0 14 13">
+                <image width="14" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9klEQVQokZ3SvS5EURQF4O+KiopGpdBKvMBUo/EOXgCVZvxUMiTTiIhCchOF1iuIRlReQIJOQUIlJKISZI99k5uZMBMruTnn7LVWzt1rn6IsSzXMYhULmM7yPc5wiOtKOpJrgTausIwZjOYX+5Xk2qntEoFdrPsbcck2xrERh8YQpjpC2whjq48ajFYYm/8wNqPHyTx84jWT++iT/uAJtzKc5zTH7RPZ8wNOcVAJexHii55akTNcwg3ecI7FahSBMO4P6Cfin8cJHnGMsTBeYm/IUKbwgvfq5WzmcCOg3xBcB2vVrwa+sIM5HOGulmzsoxbcVleLb5j2LfcuOj3GAAAAAElFTkSuQmCC" />
+              </svg>
+              <a class="header__bottom-link" href="#">
+                Lorem ipsum dolor sit
+              </a>
+            </li>
+            <li class="header__bottom-item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13"
+                viewBox="0 0 14 13">
+                <image width="14" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9klEQVQokZ3SvS5EURQF4O+KiopGpdBKvMBUo/EOXgCVZvxUMiTTiIhCchOF1iuIRlReQIJOQUIlJKISZI99k5uZMBMruTnn7LVWzt1rn6IsSzXMYhULmM7yPc5wiOtKOpJrgTausIwZjOYX+5Xk2qntEoFdrPsbcck2xrERh8YQpjpC2whjq48ajFYYm/8wNqPHyTx84jWT++iT/uAJtzKc5zTH7RPZ8wNOcVAJexHii55akTNcwg3ecI7FahSBMO4P6Cfin8cJHnGMsTBeYm/IUKbwgvfq5WzmcCOg3xBcB2vVrwa+sIM5HOGulmzsoxbcVleLb5j2LfcuOj3GAAAAAElFTkSuQmCC" />
+              </svg>
+              <a class="header__bottom-link" href="#">
+                Lorem ipsum dolor
+              </a>
+            </li>
+            <li class="header__bottom-item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13"
+                viewBox="0 0 14 13">
+                <image width="14" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9klEQVQokZ3SvS5EURQF4O+KiopGpdBKvMBUo/EOXgCVZvxUMiTTiIhCchOF1iuIRlReQIJOQUIlJKISZI99k5uZMBMruTnn7LVWzt1rn6IsSzXMYhULmM7yPc5wiOtKOpJrgTausIwZjOYX+5Xk2qntEoFdrPsbcck2xrERh8YQpjpC2whjq48ajFYYm/8wNqPHyTx84jWT++iT/uAJtzKc5zTH7RPZ8wNOcVAJexHii55akTNcwg3ecI7FahSBMO4P6Cfin8cJHnGMsTBeYm/IUKbwgvfq5WzmcCOg3xBcB2vVrwa+sIM5HOGulmzsoxbcVleLb5j2LfcuOj3GAAAAAElFTkSuQmCC" />
+              </svg>
+              <a class="header__bottom-link" href="#">
+                Lorem ipsum dolor
+              </a>
+            </li>
+            <li class="header__bottom-item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13"
+                viewBox="0 0 14 13">
+                <image width="14" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9klEQVQokZ3SvS5EURQF4O+KiopGpdBKvMBUo/EOXgCVZvxUMiTTiIhCchOF1iuIRlReQIJOQUIlJKISZI99k5uZMBMruTnn7LVWzt1rn6IsSzXMYhULmM7yPc5wiOtKOpJrgTausIwZjOYX+5Xk2qntEoFdrPsbcck2xrERh8YQpjpC2whjq48ajFYYm/8wNqPHyTx84jWT++iT/uAJtzKc5zTH7RPZ8wNOcVAJexHii55akTNcwg3ecI7FahSBMO4P6Cfin8cJHnGMsTBeYm/IUKbwgvfq5WzmcCOg3xBcB2vVrwa+sIM5HOGulmzsoxbcVleLb5j2LfcuOj3GAAAAAElFTkSuQmCC" />
+              </svg>
+              <a class="header__bottom-link" href="#">
+                Lorem ipsum
+              </a>
+            </li>
+            <li class="header__bottom-item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13"
+                viewBox="0 0 14 13">
+                <image width="14" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9klEQVQokZ3SvS5EURQF4O+KiopGpdBKvMBUo/EOXgCVZvxUMiTTiIhCchOF1iuIRlReQIJOQUIlJKISZI99k5uZMBMruTnn7LVWzt1rn6IsSzXMYhULmM7yPc5wiOtKOpJrgTausIwZjOYX+5Xk2qntEoFdrPsbcck2xrERh8YQpjpC2whjq48ajFYYm/8wNqPHyTx84jWT++iT/uAJtzKc5zTH7RPZ8wNOcVAJexHii55akTNcwg3ecI7FahSBMO4P6Cfin8cJHnGMsTBeYm/IUKbwgvfq5WzmcCOg3xBcB2vVrwa+sIM5HOGulmzsoxbcVleLb5j2LfcuOj3GAAAAAElFTkSuQmCC" />
+              </svg>
+              <a class="header__bottom-link" href="#">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+              </a>
+            </li>
+            <li class="header__bottom-item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13"
+                viewBox="0 0 14 13">
+                <image width="14" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9klEQVQokZ3SvS5EURQF4O+KiopGpdBKvMBUo/EOXgCVZvxUMiTTiIhCchOF1iuIRlReQIJOQUIlJKISZI99k5uZMBMruTnn7LVWzt1rn6IsSzXMYhULmM7yPc5wiOtKOpJrgTausIwZjOYX+5Xk2qntEoFdrPsbcck2xrERh8YQpjpC2whjq48ajFYYm/8wNqPHyTx84jWT++iT/uAJtzKc5zTH7RPZ8wNOcVAJexHii55akTNcwg3ecI7FahSBMO4P6Cfin8cJHnGMsTBeYm/IUKbwgvfq5WzmcCOg3xBcB2vVrwa+sIM5HOGulmzsoxbcVleLb5j2LfcuOj3GAAAAAElFTkSuQmCC" />
+              </svg>
+              <a class="header__bottom-link" href="#">
+                Lorem ipsum dolor sit
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="menu">
+        <button class="menu__btn">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15"
+          viewBox="0 0 20 15">
+          <image id="menu-h-menu" width="20" height="15"
+            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAATUlEQVQ4jWP8////SQYGBjMG6oCjIAP/U8kwMGBiYGA4hyFKPjjHSGUHgl04+A0ExfJ/KuEjNInlUxii5IPTo7FMMaZNLFMvLzMwnAMAF/9Ci454XikAAAAASUVORK5CYII=" />
+        </svg>
+          Меню
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              ПУНКТ МЕНЮ
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Длинный пункт меню
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Oчень Длинный пункт меню
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Eще пункт
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              п. меню
+            </a>
+          </li>          
+        </ul>
+      </nav>
+      <div class="interaction">
+        <div class="interaction__inner">
+          <form class="interaction__form" action="#">
+            <p class="interaction__form-title">Form</p>
+            <div class="interaction__form-box">
+              <label class="label">Label #1</label>
+              <input class="interaction__form-input" type="text">
+            </div>
+            <div class="interaction__form-content">
+              <div class="interaction__form-box">
+                <label class="label">Label #2</label>
+                <input class="interaction__form-input" type="text">
+              </div>
+              <div class="interaction__form-box">
+                <label class="label">Label #2</label>
+                <input class="interaction__form-input" type="text">
+              </div>
+              <div class="interaction__form-box">
+                <label class="label">Label #2</label>
+                <input class="interaction__form-input" type="text">
+              </div>
+              <div class="interaction__form-box">
+                <label class="label">Label #2</label>
+                <input class="interaction__form-input" type="text">
+              </div>
+            </div>
+            <button class="interaction__form-btn btn" type="submit">Submit</button>
+          </form>
+          <div class="interaction__content">
+            <p class="interaction__content-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+            <p class="interaction__content-link">
+              Ut enim ad minim veniam, quis nostrud exercitation
+            </p>
+            <a class="interaction__content-btn btn" href="#">
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </header>      
+  <main class="main">
+    <div class="container">
+      <section class="section-two">
+        <div class="section-two__inner">
+          <div class="section-two__item">
+            <div class="section-two__item-img"></div>
+            <div class="section-two__item-content">
+              <h3 class="section-two__item-title">Lorem ipsum dolor sit</h3>
+              <p class="section-two__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+            </div>
+          </div>
+          <div class="section-two__item">
+            <div class="section-two__item-img"></div>
+            <div class="section-two__item-content">
+              <h3 class="section-two__item-title">Lorem ipsum </h3>
+              <p class="section-two__item-text">
+                Lorem ipsum dolor sit amet, consectetur elit, sed do
+              </p>
+            </div>
+          </div>
+          <div class="section-two__item">
+            <div class="section-two__item-img"></div>
+            <div class="section-two__item-content">
+              <h3 class="section-two__item-title">Lorem ipsum dolor</h3>
+              <p class="section-two__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-three">
+        <div class="section-three__inner">
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+          <div class="section-three__item"></div>
+        </div>
+        <a class="section-three__link" href="#">More</a>
+      </section>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__box-top">
+        <div class="footer__item">
+          <input class="footer__input" type="text">
+        </div>
+        <div class="footer__item">
+          <input class="footer__input" type="text">
+        </div>
+        <div class="footer__item">
+          <input class="footer__input" type="text">
+        </div>
+        </div>
+        <div class="footer__box-bottom">
+          <div class="footer__item">
+            <input class="footer__input" type="text">
+          </div>
+          <div class="footer__item">
+            <input class="footer__input" type="text">
+          </div>
+          <div class="footer__item">
+            <input class="footer__input" type="text">
+          </div>
+          <div class="footer__item">
+            <input class="footer__input" type="text">
+          </div>
+          <div class="footer__item">
+            <input class="footer__input" type="text">
+          </div>
+          <div class="footer__item">
+            <input class="footer__input" type="text">
+          </div>
+        </div>
+      </div>
+    </div>  
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>

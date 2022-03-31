@@ -1,0 +1,35 @@
+html,
+body{
+  height: 100%;
+}
+body{
+  font-size: 14px;
+  line-height: 21px;
+  @extend %roboto-400;   
+  background-color: #eaeaea;      
+}
+
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a{
+  font-size: 16px;  
+}
+.btn{
+  width: 174px;
+  height: 31px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #006c86;
+  @extend %roboto-700;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
